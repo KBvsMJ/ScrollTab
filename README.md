@@ -24,13 +24,11 @@ Add the files in the `ScrollTab` folder to your project.
   // ...
 
   ScrollTab *tab = [[ScrollTab alloc] init];
-
   ScrollTabConfig *config = [[ScrollTabConfig alloc] init];
   config.items = @[@"zero", @"one", @"two", @"three", @"four"];
-
   tab.config = config;
   tab.selected = ^(NSString *text, NSInteger index) {
-      NSLog(@"selected tab with text %@ index %@", text, @(index));
+      NSLog(@"selected tab with text %@ and index %@", text, @(index));
   };
 
   // Layout
