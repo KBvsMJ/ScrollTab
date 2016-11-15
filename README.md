@@ -28,13 +28,14 @@ Add the files in the `ScrollTab` folder to your project.
   ScrollTabConfig *config = [[ScrollTabConfig alloc] init];
   config.items = @[@"zero", @"one", @"two", @"three", @"four"];
 
-  tab.selected = ^(NSString *noop, NSInteger index) {
-      NSLog(@"selected tab with index %@", @(index));
-  };
   tab.config = config;
+  tab.selected = ^(NSString *text, NSInteger index) {
+      NSLog(@"selected tab with text %@ index %@", text, @(index));
+  };
 
   // Layout
   [self.view addSubview:tab];
+
   // ...
 ```
 
@@ -48,7 +49,7 @@ Change the control's layout, item font/colors and more using `ScrollTabConfig`.
 
 # Compatibility
 
-This project was tested with iOS 10, see the [`1.x` tags](releases) for older versions.
+This project was tested with iOS 10, see the `1.x` [tags](https://github.com/dkhamsing/ScrollTab/releases) for older versions.
 
 # Contact
 
