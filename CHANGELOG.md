@@ -33,7 +33,7 @@ https://github.com/dkhamsing/ScrollTab/releases
 
 ## 1.1
 
-- Cocoapods
+- CocoaPods
 - Add button edge inset property
 - Add underline indicator offset property
 - Misc. fixes
